@@ -3,12 +3,14 @@ import BarChart from './components/BarChart';
 import PieChart from './components/PieChart';
 import ScatterPlot from './components/ScatterPlot';
 import WeatherGraph from './components/WeatherGraph';
+import PineapplePie from './components/PineapplePie';
 import './App.css';
 
 import basicBarData from './data/basic-bar';
 import basicPieData from './data/basic-pie';
 import basicScatter from './data/basic-scatter';
 import weatherData from './data/weather-data';
+import pineappleData from './data/pineapple-on-pizza';
 
 class App extends Component {
   render() {
@@ -19,6 +21,7 @@ class App extends Component {
         <ScatterPlot title="Scatter plot" data={basicScatter} height={100} width={100} />
         <div className="big-space"></div>
         <WeatherGraph title="Temperatures Jan - Jun" data={weatherData} />
+        <PineapplePie title="Pineapple Controversy" data={pineappleData} />
       </div>
     );
   }

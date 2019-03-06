@@ -1,6 +1,9 @@
 const count = 1000
 const scores = [...(new Array(count))]
-    .map((_, index) => ({ x: index + 1, y: (Math.random() * 100) * Math.random() }))
+    .map((_, index) => ({ 
+      x: index + 1, 
+      y: (Math.random() * 100) * (1 - Math.random())
+    }))
 
 const sum = scores
     .map(score => score.y)

@@ -1,3 +1,8 @@
 .chart {
     margin-bottom: 2rem;
 }
+
+.pie {
+    height: 40%;
+    width: 40%;
+}

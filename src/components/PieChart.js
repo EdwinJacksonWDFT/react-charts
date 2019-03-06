@@ -1,32 +1,10 @@
 import React, { Component } from 'react';
 import { Pie } from 'react-chartjs-2';
 
-const data = {
-    labels: [
-        'Red',
-        'Green',
-        'Yellow'
-    ],
-    datasets: [
-        {
-            data: [300, 50, 100],
-            backgroundColor: [
-                '#FF6384',
-                '#36A2EB',
-                '#FFCE56'
-            ],
-            hoverBackgroundColor: [
-                '#FF6384',
-                '#36A2EB',
-                '#FFCE56'
-            ]
-        }
-    ]
-};
 
-export default props => (
-    <div className="chart">
-        <h2>Pie Example</h2>
-        <Pie data={data} />
+export default ({title, ...props}) => (
+    <div className="chart pie">
+        <h1>{title}</h1>
+        <Pie {...props}/>
     </div>
 )
